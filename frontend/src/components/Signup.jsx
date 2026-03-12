@@ -13,7 +13,7 @@ const signup = async ()=>{
   return
  }
 
- const res = await fetch("http://localhost:5000/api/signup",{
+ const res = await fetch("https://authentication-module-lt21.vercel.app/api/signup",{
 
   method:"POST",
   headers:{'Content-Type':'application/json'},

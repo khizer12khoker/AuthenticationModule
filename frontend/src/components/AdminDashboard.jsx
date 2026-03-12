@@ -9,7 +9,7 @@ const navigate = useNavigate()
 
 const getUsers = async ()=>{
 
- const res = await fetch("http://localhost:5000/api/users",{
+ const res = await fetch("https://authentication-module-lt21.vercel.app/api/users",{
   headers:{
    Authorization:localStorage.getItem("token")
   }
@@ -22,7 +22,7 @@ const getUsers = async ()=>{
 
 const getAdminInfo = async ()=>{
 
- const res = await fetch("http://localhost:5000/api/profile",{
+ const res = await fetch("https://authentication-module-lt21.vercel.app/api/profile",{
   headers:{
    Authorization:localStorage.getItem("token")
   }
@@ -37,7 +37,7 @@ const getAdminInfo = async ()=>{
 
 const deleteUser = async (id)=>{
 
- await fetch("http://localhost:5000/api/users/"+id,{
+ await fetch("https://authentication-module-lt21.vercel.app/api/users/"+id,{
   method:"DELETE",
   headers:{
    Authorization:localStorage.getItem("token")

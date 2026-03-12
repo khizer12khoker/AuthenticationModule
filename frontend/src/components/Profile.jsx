@@ -11,7 +11,7 @@ export default function Profile() {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/profile", {
+        fetch("https://authentication-module-lt21.vercel.app/api/profile", {
 
             headers: {
                 Authorization: localStorage.getItem("token")
@@ -35,7 +35,7 @@ export default function Profile() {
 
     const updateProfile = async () => {
 
-        const res = await fetch("http://localhost:5000/api/updateProfile", {
+        const res = await fetch("https://authentication-module-lt21.vercel.app/api/updateProfile", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
